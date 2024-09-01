@@ -32,6 +32,36 @@
             border-radius: 0.375rem;
             margin-bottom: 0.5rem;
         }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+            text-decoration: none;
+            flex-grow: 1;
+        }
+        .navbar a.active {
+            color: red;
+        }
+        .navbar a img {
+            width: 24px;
+            height: 24px;
+        }
+        .navbar a span {
+            display: block;
+            margin-top: 4px;
+            }
     </style>
 </head>
 <body class="font-sans bg-gray-100 flex flex-col min-h-screen">
@@ -113,15 +143,27 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 mt-auto">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <button class="footer-btn">Home</button>
-                <button class="footer-btn">Orders</button>
-                <button class="footer-btn">Wishlist</button>
-                <button class="footer-btn">Account</button>
-            </div>
-        </div>
-    </footer>
+    <div class="navbar">
+    <a href="#shop" class="active">
+        <img src="https://img.icons8.com/material-rounded/24/000000/shopping-basket-2.png" alt="Shop">
+        <span>Shop</span>
+    </a>
+    <a href="#mylist">
+        <img src="https://img.icons8.com/material-rounded/24/000000/heart.png" alt="My list">
+        <span>My list</span>
+    </a>
+    <a href="#wallet">
+        <img src="https://img.icons8.com/material-rounded/24/000000/wallet.png" alt="Wallet">
+        <span>Wallet</span>
+    </a>
+    <a href="#orders">
+        <img src="https://img.icons8.com/material-rounded/24/000000/shopping-bag.png" alt="Orders">
+        <span>Orders</span>
+    </a>
+    <a href="#account">
+        <img src="https://img.icons8.com/material-rounded/24/000000/user.png" alt="Account">
+        <span>Account</span>
+    </a>
+    </div>
 </body>
 </html>
