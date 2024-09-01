@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Roboto:wght@400;700&amp;family=Open+Sans:wght@400;600" />
+    <title>Shopify Demo Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        .hero-banner {
+            background-image: url('https://example.com/hero-banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .category-icon {
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="#" class="text-2xl font-bold text-gray-800">Shopify Demo</a>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-800 hover:text-blue-500">Home</a>
+                <a href="#" class="text-gray-800 hover:text-blue-500">Shop</a>
+                <a href="#" class="text-gray-800 hover:text-blue-500">About</a>
+                <a href="#" class="text-gray-800 hover:text-blue-500">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-800 hover:text-blue-500">Login</a>
+                <a href="#" class="text-gray-800 hover:text-blue-500">Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner h-80 flex items-center justify-center text-center text-white">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-4xl font-bold">Welcome to Our Store</h1>
+            <p class="mt-4 text-lg">Discover the best products for you.</p>
+            <a href="#" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Shop by Category</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            <div class="text-center">
+                <div class="category-icon" style="background-image: url('https://example.com/category1.jpg');"></div>
+                <p class="mt-2 text-lg font-semibold">Category 1</p>
+            </div>
+            <div class="text-center">
+                <div class="category-icon" style="background-image: url('https://example.com/category2.jpg');"></div>
+                <p class="mt-2 text-lg font-semibold">Category 2</p>
+            </div>
+            <div class="text-center">
+                <div class="category-icon" style="background-image: url('https://example.com/category3.jpg');"></div>
+                <p class="mt-2 text-lg font-semibold">Category 3</p>
+            </div>
+            <div class="text-center">
+                <div class="category-icon" style="background-image: url('https://example.com/category4.jpg');"></div>
+                <p class="mt-2 text-lg font-semibold">Category 4</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Featured Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://example.com/product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">Product 1</h3>
+                <p class="mt-2 text-gray-600">$29.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg">View Product</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://example.com/product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">Product 2</h3>
+                <p class="mt-2 text-gray-600">$39.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg">View Product</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://example.com/product3.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">Product 3</h3>
+                <p class="mt-2 text-gray-600">$49.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg">View Product</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="https://example.com/product4.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="mt-4 text-xl font-semibold text-gray-800">Product 4</h3>
+                <p class="mt-2 text-gray-600">$59.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded-lg">View Product</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center mb-6">
+            <p class="mb-4">&copy; 2024 Shopify Demo. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white">Home</a>
+                <a href="#" class="text-gray-400 hover:text-white">Orders</a>
+                <a href="#" class="text-gray-400 hover:text-white">Wishlist</a>
+                <a href="#" class="text-gray-400 hover:text-white">Account</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
